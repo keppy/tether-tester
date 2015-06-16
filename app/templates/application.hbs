@@ -1,3 +1,14 @@
 <h2 id="title">Welcome to Ember.js</h2>
 
+<button {{action 'toggleTheProp'}}>show another button</button>
+<div id="targetDiv"></div>
+{{#if toggleProp}}
+  {{#ember-tether
+    target='#targetDiv'
+    targetAttachment='bottom left'
+    attachment='top left'
+    constraings=trayTetherConstraints}}
+    {{action-button}}
+  {{/ember-tether}}
+{{/if}}
 {{outlet}}

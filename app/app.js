@@ -9,7 +9,8 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
-  Resolver: Resolver
+  Resolver: Resolver,
+  rootElement: '#myRoot'
 });
 
 loadInitializers(App, config.modulePrefix);
